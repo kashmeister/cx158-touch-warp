@@ -20,6 +20,12 @@ coordinates onto the display the cursor is currently on. With the cursor on anot
 touch clicks there. The controller sends press and position in its first report, so moving the
 cursor afterwards is too late to fix the click.
 
+Touch screens that macOS does not drive at all, such as multi-touch digitizers that work on Windows
+without a driver, need a different fix: [MacTouch](https://github.com/kashmeister/mactouch) reads
+their touches and adds tap, scroll, right click and pinch zoom. It cannot help with the CX158's
+digitizer mode (see [Troubleshooting](#troubleshooting)), where the controller does not respond to
+macOS at all.
+
 ## How it works
 
 An event tap intercepts mouse button events. A press counts as a touch when it:
