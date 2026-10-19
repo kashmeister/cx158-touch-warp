@@ -1,5 +1,11 @@
 # cx158-touch-warp
 
+> **Retired.** [MacTouch](https://github.com/kashmeister/mactouch) 3.1 and later drives the CX158 itself,
+> in both of its modes: in mouse mode (`0416:c169`) it puts touches on the CX158 with tap, hold for
+> right click and scrolling, and in digitizer mode (`eeef:2828`), which this agent could only warn
+> about, it reads the touch controller directly for full multi-touch. MacTouch's `install.sh` stops
+> and removes this agent. This repository is kept for reference and is read-only.
+
 A macOS launch agent that makes touches on a CX158 portable touch monitor land on the CX158,
 whichever display the cursor is on.
 
